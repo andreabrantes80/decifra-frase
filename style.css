@@ -1,6 +1,6 @@
 /* Fonte mais moderna */
 body {
-  font-family: 'Press Start 2P', Arial, sans-serif; /* fonte estilo retro gamer */
+  font-family: "Press Start 2P", Arial, sans-serif; /* fonte estilo retro gamer */
   background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
   color: #f4f4f4;
   text-align: center;
@@ -11,8 +11,8 @@ body {
 
 /* Título com efeito neon */
 h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
   color: #00ffea;
   text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
 }
@@ -20,30 +20,31 @@ h1 {
 /* Container do jogo com estilo futurista */
 #game {
   background: rgba(20, 20, 40, 0.9);
-  padding: 20px;
-  border-radius: 15px;
+  padding: 30px;
+  border-radius: 20px;
   display: block;
   margin: 0 auto;
   box-shadow: 0 0 20px rgba(0, 255, 234, 0.5);
-  max-width: 600px;
+  max-width: 700px;
   width: 100%;
   box-sizing: border-box;
   border: 2px solid #00ffea;
+  font-size: 1.3rem; /* aumenta textos internos */
 }
 
 /* Área de inputs */
 #input-area {
-  margin-top: 15px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 label {
   flex-basis: 100%;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #ffdd00;
   text-shadow: 0 0 5px #ffdd00;
 }
@@ -51,14 +52,14 @@ label {
 /* Inputs estilo arcade */
 input {
   padding: 12px;
-  width: 60px;
+  width: 90px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border: 2px solid #00ffea;
   border-radius: 8px;
   background: #0f0f1a;
   color: #fff;
-  box-shadow: inset 0 0 10px rgba(0,255,234,0.3);
+  box-shadow: inset 0 0 10px rgba(0, 255, 234, 0.3);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -73,7 +74,7 @@ button {
   margin-top: 16px;
   padding: 12px 20px;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border: none;
   border-radius: 8px;
   background: linear-gradient(45deg, #ff0077, #ffdd00);
@@ -87,20 +88,28 @@ button {
 
 button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(255, 0, 119, 0.9);
+  box-shadow: 0 0 28px rgba(255, 0, 119, 0.9);
+}
+
+/* Mensagens */
+#mensagem {
+  font-size: 1.3rem; /* maior */
+  margin-top: 20px;
+  color: #ffffff;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
-  body{
+  body {
     margin-top: 25px;
   }
 
   #game {
-    padding: 15px;
+    padding: 25px;
+    font-size: 1.2rem;
   }
 
   input {
@@ -109,25 +118,27 @@ button:hover {
     padding: 16px;
   }
 
-
   button {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    padding: 16px;
   }
 }
 
 @media (max-width: 480px) {
   body {
-    padding: 10px;
-    margin-top: 25px;
+    padding: 15px;
+    margin-top: 20px;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   #game {
-    padding: 10px;
+    padding: 20px;
+    font-size: 1.1rem;
   }
 
   #input-area {
@@ -137,14 +148,19 @@ button:hover {
 
   input {
     width: 100%;
-    max-width: 150px;
+    max-width: 160px;
     font-size: 1.4rem; /* bem grande para celular */
     padding: 18px;
   }
 
-
   button {
     width: 100%;
+    font-size: 1.4rem;
+    padding: 18px;
+  }
+
+  #mensagem {
+    font-size: 1.2rem;
   }
 }
 
