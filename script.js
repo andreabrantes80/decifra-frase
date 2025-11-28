@@ -1,20 +1,20 @@
 // Banco de frases por nível
 const frases = [
-  "ola",
-  "este e um teste",
-  "copilot ajuda voce a aprender",
-  "quanto mais voce joga mais dificil fica",
-  "javascript e divertido para criar jogos",
-  "a pratica constante melhora suas habilidades de programacao e logica",
-  "resolver desafios diariamente aumenta sua capacidade de raciocinio rapido",
-  "quanto mais voce se dedica mais resultados positivos aparecem",
-  "aprender novas linguagens abre portas para diferentes oportunidades",
-  "a programacao estimula a criatividade e o pensamento critico",
-  "cada erro cometido e uma chance de evoluir e corrigir",
-  "os jogos educativos tornam o aprendizado mais leve e divertido",
-  "a persistencia e a chave para superar qualquer dificuldade",
-  "explorar novos projetos ajuda a expandir seus conhecimentos",
-  "a colaboracao em equipe acelera o processo de aprendizado",
+  "bom dia",
+  "como voce esta",
+  "vamos tomar um cafe",
+  "preciso ir ao supermercado",
+  "hoje esta muito quente",
+  "vou assistir um filme a noite",
+  "amanha tenho uma reuniao importante",
+  "gosto de caminhar no parque",
+  "preciso ligar para minha mae",
+  "vamos pedir uma pizza para jantar",
+  "o cachorro esta dormindo no sofa",
+  "tenho que pagar as contas hoje",
+  "vamos marcar um encontro no shopping",
+  "adoro ouvir musica enquanto trabalho",
+  "preciso comprar um presente de aniversario"
 ];
 
 let nivel = 0;
