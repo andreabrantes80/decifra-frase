@@ -103,5 +103,19 @@ function tentarDecifrar() {
   }
 }
 
+// Exibe modal ao iniciar
+window.onload = function () {
+  const modal = document.getElementById("tutorial-modal");
+  const fecharBtn = document.getElementById("fecharTutorial");
+
+  modal.style.display = "flex"; // mostra modal
+
+  fecharBtn.onclick = function () {
+    modal.style.display = "none"; // fecha modal
+    iniciarNivel(); // inicia o jogo
+  };
+};
+
 // Inicia o jogo
+
 iniciarNivel();

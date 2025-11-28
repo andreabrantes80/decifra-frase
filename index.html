@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Decifra Frase</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>🔐 Jogo Decifra Frase</h1>
-  <div id="game">
-    <p><strong>Nível:</strong> <span id="nivel">1</span></p>
-    <p><strong>Mensagem Criptografada:</strong> <span id="criptografada"></span></p>
-    <p><strong>Mensagem Decifrada:</strong> <span id="decifrada"></span></p>
-
-    <div id="input-area">
-      <label>Letra criptografada:</label>
-      <input type="text" id="letraCripto" maxlength="1">
-      <label>Letra original:</label>
-      <input type="text" id="letraOriginal" maxlength="1">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Decifra Frase</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🔐 Jogo Decifra Frase</h1>
+    <div id="tutorial-modal" class="modal">
+      <div class="modal-content">
+        <h2>🔐 Bem-vindo ao Jogo Decifra Frase!</h2>
+        <p>
+          👉 Como jogar:<br />
+          1. Você verá uma frase criptografada.<br />
+          2. Digite a letra criptografada e a letra original que acha
+          correta.<br />
+          3. Clique em <strong>Decifrar</strong>.<br />
+          4. Se acertar, a letra será revelada na frase.<br />
+          5. Continue até decifrar toda a mensagem!
+        </p>
+        <button id="fecharTutorial">Começar</button>
+      </div>
     </div>
-    <button onclick="tentarDecifrar()">Decifrar</button>
+    <div id="game">
+      <p><strong>Nível:</strong> <span id="nivel">1</span></p>
+      <p>
+        <strong>Mensagem Criptografada:</strong>
+        <span id="criptografada"></span>
+      </p>
+      <p><strong>Mensagem Decifrada:</strong> <span id="decifrada"></span></p>
 
-    <p id="mensagem"></p>
-  </div>
+      <div id="input-area">
+        <label>Letra criptografada:</label>
+        <input type="text" id="letraCripto" maxlength="1" />
+        <label>Letra original:</label>
+        <input type="text" id="letraOriginal" maxlength="1" />
+      </div>
+      <button onclick="tentarDecifrar()">Decifrar</button>
 
-  <script src="script.js"></script>
-</body>
+      <p id="mensagem"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
