@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Decifra Frase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🔐 Jogo Decifra Frase</h1>
+  <div id="game">
+    <p><strong>Nível:</strong> <span id="nivel">1</span></p>
+    <p><strong>Mensagem Criptografada:</strong> <span id="criptografada"></span></p>
+    <p><strong>Mensagem Decifrada:</strong> <span id="decifrada"></span></p>
+
+    <div id="input-area">
+      <label>Letra criptografada:</label>
+      <input type="text" id="letraCripto" maxlength="1">
+      <label>Letra original:</label>
+      <input type="text" id="letraOriginal" maxlength="1">
+    </div>
+    <button onclick="tentarDecifrar()">Decifrar</button>
+
+    <p id="mensagem"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

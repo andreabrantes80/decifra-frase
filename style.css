@@ -1,0 +1,144 @@
+/* Fonte mais moderna */
+body {
+  font-family: 'Press Start 2P', Arial, sans-serif; /* fonte estilo retro gamer */
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+  color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  margin-top: 25px;
+}
+
+/* Título com efeito neon */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00ffea;
+  text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
+}
+
+/* Container do jogo com estilo futurista */
+#game {
+  background: rgba(20, 20, 40, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 255, 234, 0.5);
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #00ffea;
+}
+
+/* Área de inputs */
+#input-area {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+label {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffdd00;
+  text-shadow: 0 0 5px #ffdd00;
+}
+
+/* Inputs estilo arcade */
+input {
+  padding: 12px;
+  width: 60px;
+  text-align: center;
+  font-size: 1rem;
+  border: 2px solid #00ffea;
+  border-radius: 8px;
+  background: #0f0f1a;
+  color: #fff;
+  box-shadow: inset 0 0 10px rgba(0,255,234,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  outline: none;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00ffea;
+}
+
+/* Botão estilo gamer */
+button {
+  margin-top: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff0077, #ffdd00);
+  color: #0f0f1a;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px rgba(255, 0, 119, 0.6);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 0, 119, 0.9);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  body{
+    margin-top: 25px;
+  }
+
+  #game {
+    padding: 15px;
+  }
+
+  input {
+    width: 50px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    margin-top: 25px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #game {
+    padding: 10px;
+  }
+
+  #input-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input {
+    width: 100%;
+    max-width: 120px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
